@@ -21,7 +21,7 @@ test('GET /reviews - Obtener todas las reviews', async () => {
 // POST privado → Crear una review
 test('POST /reviews - Crear una review', async () => {
   const body = {
-    hotelId: 16,
+    hotelId: 1,
     rating: 5,
     comment: 'Excelente hotel'
   }

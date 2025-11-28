@@ -22,7 +22,7 @@ test('GET /reservation - Obtener todas las reservaciones', async () => {
 // POST privado → Crear una reservación
 test('POST /favorites - Crear un Favorito', async () => {
   const body = {
-    "hotelId": 11,
+    "hotelId": 1,
     "checkIn": "2025-12-01",
     "checkOut": "2025-12-05"
     }
