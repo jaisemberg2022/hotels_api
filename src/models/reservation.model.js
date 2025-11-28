@@ -12,14 +12,6 @@ const Reservation = db.define('reservation', {
     type: DataTypes.DATEONLY,
     allowNull: false
   },
-  userId: {
-    type: DataTypes.INTEGER,
-    allowNull: false
-  },
-  hotelId: {
-    type: DataTypes.INTEGER,
-    allowNull: false
-  }
 })
 
 

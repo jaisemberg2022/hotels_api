@@ -4,11 +4,6 @@ import User from './user.model.js'
 import Hotel from './hotel.model.js'
 
 const Review = db.define('review', {
-  id: {
-    type: DataTypes.INTEGER,
-    primaryKey: true,
-    autoIncrement: true
-  },
   rating: {
     type: DataTypes.INTEGER, // 1, 2, 3, 4, 5
     allowNull: false
@@ -17,14 +12,6 @@ const Review = db.define('review', {
     type: DataTypes.TEXT,
     allowNull: false
   },
-  userId: {
-    type: DataTypes.INTEGER,
-    allowNull: false
-  },
-  hotelId: {
-    type: DataTypes.INTEGER,
-    allowNull: false
-  }
 })
 
 User.hasMany(Review)
