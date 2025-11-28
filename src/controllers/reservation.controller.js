@@ -25,7 +25,7 @@ export const getAll = async (req, res) => {
 
 export const create = catchError(async (req, res) => {
     const { hotelId, checkIn, checkOut } = req.body;
-  const userId = req.user.user.id;
+  const userId = req.user.id;
   const result = await Reservation.create({ hotelId, userId , checkIn, checkOut});
   return res.status(201).json(result);
 });
